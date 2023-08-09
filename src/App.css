@@ -1,0 +1,35 @@
+/*GENERAL STYLES*/
+.App {
+    font-size: 18px;
+}
+
+h2 {
+    margin: 0;
+}
+
+/*TYPOGRAPHY*/
+
+p,
+header .title,
+a {
+    font-family: 'Barlow', sans-serif;
+}
+
+h2,
+h1,
+.client-testimonials .name,
+.learn-more {
+    font-family: 'Fraunces', serif;
+}
+
+
+/*HEADER*/
+header {
+    background-image: url("../public/images/mobile/image-header.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*MAIN*/
