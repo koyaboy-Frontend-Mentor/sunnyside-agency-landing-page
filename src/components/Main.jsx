@@ -3,32 +3,39 @@ import React from "react"
 export default function Main() {
     return (
         <main>
-            <div>
+            <div className="img-transform-container">
                 <img src="./images/mobile/image-transform.jpg" alt="" />
             </div>
-            <div>
+
+            <div className="transform">
                 <h2>Transform your brand</h2>
                 <p>We are a full-service creative agency specializing in
                     helping brands grow fast. Engage your clients through
-                    compelling visuals that do most of the marketing for you
+                    compelling visuals that do most of the marketing for you.
                 </p>
+
                 <a href="/" className="learn-more">LEARN MORE</a>
+                <hr />
+
+
             </div>
 
-            <div>
+            <div className="img-stand-out-container">
                 <img src="./images/mobile/image-stand-out.jpg" alt="" />
             </div>
 
-            <div>
+            <div className="stand-out">
                 <h2>Stand out to the right audience</h2>
-                <p>Using a collaborative formula of designers,researchers,
-                    photographers,videographers, and copywriters,we'll
+                <p>Using a collaborative formula of
+                    designers, researchers, photographers,
+                    videographers, and copywriters,we'll
                     build and extend your brand in digital places.
                 </p>
                 <a href="/" className="learn-more">LEARN MORE</a>
+                <hr />
             </div>
 
-            <div>
+            <div className="graphic-design">
                 <h2>Graphic Design</h2>
                 <p>Great design makes you memorable. We deliver
                     artwork that underscores your brand message
@@ -36,7 +43,7 @@ export default function Main() {
                 </p>
             </div>
 
-            <div>
+            <div className="photography">
                 <h2>Photography</h2>
                 <p>Increase your credibility by getting the most
                     stunning, high-quality photos that improve your

@@ -1,9 +1,6 @@
 /*GENERAL STYLES*/
 .App {
     font-size: 18px;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: red;
 }
 
 h2 {
@@ -30,7 +27,7 @@ h1,
 header {
     background-image: url("../public/images/mobile/image-header.jpg");
     height: 500px;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0.5em;
@@ -48,7 +45,7 @@ header {
 
 .header-text {
     text-align: center;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 
 .header-text h1 {
@@ -59,3 +56,67 @@ header {
 
 
 /*MAIN*/
+
+.img-transform-container img,
+.img-stand-out-container img {
+    max-width: 100%;
+}
+
+.transform,
+.stand-out {
+    text-align: center;
+    padding: 3em 1.5em;
+}
+
+.transform h2,
+.stand-out h2 {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.transform p,
+.stand-out p {
+    color: hsl(232, 10%, 55%);
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+hr {
+    position: relative;
+    bottom: 0.92em;
+    border: 5px solid;
+    border-radius: 10px;
+    width: 140px;
+}
+
+.transform hr {
+    border-color: hsla(7, 99%, 70%, 0.3);
+}
+
+.stand-out hr {
+    border-color: hsla(51, 100%, 49%, 0.3);
+}
+
+
+a.learn-more {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+}
+
+
+.graphic-design {
+    background-image: url("../public/images/mobile/image-graphic-design.jpg");
+    height: 500px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photography {
+    background-image: url("../public/images/mobile/image-photography.jpg");
+    height: 500px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
