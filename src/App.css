@@ -18,6 +18,7 @@ a {
 h2,
 h1,
 .client-testimonials .name,
+footer h2,
 .learn-more {
     font-family: 'Fraunces', serif;
 }
@@ -111,6 +112,24 @@ a.learn-more {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.graphic-design-text {
+    color: hsl(167, 40%, 24%);
+}
+
+.graphic-design-text,
+.photography-text {
+    position: absolute;
+    text-align: center;
+    bottom: 2em;
+    padding: 0 0.8em;
+}
+
+.graphic-design-text p,
+.photography-text p {
+    font-size: 1rem;
 }
 
 .photography {
@@ -119,4 +138,108 @@ a.learn-more {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.photography-text {
+    color: hsl(198, 62%, 26%);
+}
+
+.client-testimonials {
+    text-align: center;
+    /* background-color: green; */
+}
+
+.client-testimonials .testimony-container {
+    margin-bottom: 4em;
+}
+
+.client-testimonials h2 {
+    letter-spacing: 0.2em;
+    color: hsl(210, 4%, 67%);
+    font-size: 1.1rem;
+    margin: 4em 0;
+}
+
+.client-testimonials div.img-container {
+    /* background-color: red; */
+    margin-bottom: 1.7em;
+}
+
+.client-testimonials img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.client-testimonials .testimony {
+    font-size: 1.1rem;
+    padding: 0 1.5em;
+    color: hsl(232, 10%, 55%);
+    /* background-color: green; */
+}
+
+.client-testimonials .testimony.emily {
+    color: hsl(213, 9%, 39%);
+}
+
+.client-testimonials .name {
+    margin-bottom: 0.5em;
+    color: hsl(212, 27%, 19%);
+
+}
+
+.client-testimonials .role {
+    margin: 0;
+    font-size: 0.93rem;
+    color: hsl(210, 4%, 67%);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+}
+
+.gallery img {
+    width: 50%;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    padding: 2.5em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(168, 34%, 41%, 0.65);
+}
+
+footer h2 {
+    color: hsl(168, 34%, 41%);
+    margin-bottom: 0.8em;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 4em;
+}
+
+footer nav a {
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+}
+
+footer .social-icons {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }

@@ -36,67 +36,71 @@ export default function Main() {
             </div>
 
             <div className="graphic-design">
-                <h2>Graphic Design</h2>
-                <p>Great design makes you memorable. We deliver
-                    artwork that underscores your brand message
-                    and captures potential clients' attention
-                </p>
+                <div className="graphic-design-text">
+                    <h2>Graphic Design</h2>
+                    <p>Great design makes you memorable. We deliver
+                        artwork that underscores your brand message
+                        and captures potential clients' attention
+                    </p>
+                </div>
             </div>
 
             <div className="photography">
-                <h2>Photography</h2>
-                <p>Increase your credibility by getting the most
-                    stunning, high-quality photos that improve your
-                    business image.
-                </p>
+                <div className="photography-text">
+                    <h2>Photography</h2>
+                    <p>Increase your credibility by getting the most
+                        stunning, high-quality photos that improve your
+                        business image.
+                    </p>
+                </div>
             </div>
 
             <div className="client-testimonials">
                 <h2>CLIENT TESTIMONIALS</h2>
-                <div>
-                    <div>
+                <div className="testimony-container">
+                    <div className="img-container">
                         <img src="./images/image-emily.jpg" alt="emily" />
                     </div>
-                    <p>We put our trsut in Sunnyside and they delivered,
+                    <p className="testimony emily">We put our trust in Sunnyside and they delivered,
                         making sure our needs were
                         met and deadlines were always hit.
                     </p>
                     <div>
                         <h3 className="name">Emily R.</h3>
-                        <p>Marketing Director</p>
+                        <p className="role ">Marketing Director</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className="testimony-container">
+                    <div className="img-container">
                         <img src="./images/image-thomas.jpg" alt="thomas" />
                     </div>
 
-                    <p>Suunyside's enthusiasm coupled with
+                    <p className="testimony">Suunyside's enthusiasm coupled with
                         their keen interest in our brand's success
                         made it a satisfying and enjoyable
                         experience.
                     </p>
                     <div>
                         <h3 className="name">Thomas S.</h3>
-                        <p>Chief Operating Officer</p>
+                        <p className="role ">Chief Operating Officer</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className="testimony-container">
+                    <div className="img-container">
                         <img src="./images/image-jennie.jpg" alt="jennie" />
                     </div>
-                    <p>Incredible end result! Our sales increased
+                    <p className="testimony">Incredible end result! Our sales increased
                         over 400% when we worked with
                         Sunnyside. Highly recommended!
                     </p>
                     <div>
                         <h3 className="name">Jennie F.</h3>
-                        <p>Business Owner</p>
+                        <p className="role ">Business Owner</p>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div className="gallery">
                 <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk-bottles" />
                 <img src="./images/mobile/image-gallery-orange.jpg" alt="orange" />
                 <img src="./images/mobile/image-gallery-cone.jpg" alt="cone" />
@@ -112,7 +116,7 @@ export default function Main() {
                         <li><a href="/">Projects</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div className="social-icons">
                     <img src="./images/icon-facebook.svg" alt="facebook" />
                     <img src="./images/icon-instagram.svg" alt="instagram" />
                     <img src="./images/icon-twitter.svg" alt="twitter" />
