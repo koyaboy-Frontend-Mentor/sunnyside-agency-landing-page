@@ -26,6 +26,7 @@ footer h2,
 
 /*HEADER*/
 header {
+    /* position: relative; */
     background-image: url("../public/images/mobile/image-header.jpg");
     height: 500px;
     background-position: bottom;
@@ -42,6 +43,54 @@ header {
 
 .header-nav .title {
     color: hsl(0, 0%, 100%);
+}
+
+.menu-expanded {
+    display: none;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    padding: 1em 0;
+    text-align: center;
+    list-style: none;
+    margin: 0 0.5em;
+    margin-top: 3em;
+}
+
+.menu-expanded::before {
+    content: "";
+    position: absolute;
+    top: -1em;
+    right: 0;
+    border-width: 20px 25px 0px 50px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.menu-expanded.active {
+    display: flex;
+}
+
+.menu-expanded ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-expanded a {
+    text-decoration: none;
+    color: hsl(232, 10%, 55%);
+}
+
+.menu-expanded button {
+    font-family: 'Fraunces', serif;
+    border-style: none;
+    border-radius: 30px;
+    padding: 1em 2em;
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(212, 27%, 19%);
 }
 
 .header-text {
