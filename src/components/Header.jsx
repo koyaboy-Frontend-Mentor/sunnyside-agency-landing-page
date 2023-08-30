@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 
 export default function Header() {
     const [menu, setMenu] = useState(false)
+
+
     const menuRef = useRef(null)
     const headerTextRef = useRef(null)
 
@@ -14,16 +16,25 @@ export default function Header() {
         menu ? headerTextRef.current.style.display = "none" : headerTextRef.current.style.display = "block"
     }, [menu])
 
-
     return (
         <header>
             <div className="header-nav">
-                <h2 className="title">sunnyside</h2>
+                <img src="./images/logo.svg" alt="sunnyside-logo" />
+
                 <img
                     src="./images/icon-hamburger.svg"
                     alt="hamburger-menu"
                     className="hamburger-menu"
                     onClick={toggleMenu} />
+
+                <nav className="desktop-nav">
+                    <ul>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <button><a href="/"></a>CONTACT</button>
+                    </ul>
+                </nav>
             </div>
 
             <div
@@ -46,7 +57,7 @@ export default function Header() {
                 <h1>WE ARE CREATIVES</h1>
                 <img src="./images/icon-arrow-down.svg" alt="" />
             </div>
-        </header>
+        </header >
 
     )
 }
