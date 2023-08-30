@@ -125,19 +125,15 @@ header {
     0%,
     100% {
         transform: translateY(0);
-        /* Start and end position */
     }
 
     50% {
         transform: translateY(-10px);
-        /* Middle position, adjust as needed */
     }
 }
 
-/* Apply animation to the element */
 .moveUpDown {
     animation: moveUpDown 2s ease-in-out infinite;
-    /* Adjust duration and animation timing */
 }
 
 .header-text h1 {
