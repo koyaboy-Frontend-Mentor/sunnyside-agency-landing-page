@@ -62,8 +62,18 @@ header {
     display: none;
 }
 
+.desktop-nav button:hover {
+    cursor: pointer;
+    background-color: hsla(210, 4%, 67%, 0.25);
+    color: white;
+}
+
 .header-nav .title {
     color: hsl(0, 0%, 100%);
+}
+
+.hamburger-menu {
+    cursor: pointer;
 }
 
 .menu-expanded {
@@ -77,6 +87,11 @@ header {
     margin: 0 0.5em;
     margin-top: 3em;
 }
+
+.menu-expanded button {
+    cursor: pointer;
+}
+
 
 .menu-expanded::before {
     content: "";
@@ -165,7 +180,7 @@ header {
 .gallery img:hover {
     cursor: pointer;
     transform: scaleY(1.1);
-    transition: all 1s
+    transition: all 1s ease-in 0.05s
 }
 
 
@@ -193,14 +208,27 @@ hr {
 
 .transform hr {
     border-color: hsla(51, 100%, 49%, 0.3);
+    cursor: pointer;
 }
+
+.transform .learn-more-container:hover hr {
+    border-color: hsla(51, 100%, 49%, 0.6);
+}
+
+
 
 .stand-out hr {
     border-color: hsla(7, 99%, 70%, 0.3);
 }
 
+.stand-out .learn-more-container:hover hr {
+    border-color: hsla(7, 99%, 70%, 0.6);
+}
+
+
 
 a.learn-more {
+
     text-decoration: none;
     color: hsl(212, 27%, 19%);
 }
@@ -344,8 +372,14 @@ footer nav a {
     text-decoration: none;
 }
 
+footer nav a:hover {
+    color: white;
+}
+
+
 footer .social-icons {
     display: flex;
+    cursor: pointer;
     width: 50%;
     justify-content: center;
     gap: 2em;
@@ -412,6 +446,7 @@ footer .social-icons {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
+        height: 100vh;
     }
 
 

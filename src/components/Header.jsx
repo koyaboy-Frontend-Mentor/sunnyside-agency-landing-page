@@ -46,7 +46,7 @@ export default function Header() {
                         <li><a href="/">About</a></li>
                         <li><a href="/">Services</a></li>
                         <li><a href="/">Projects</a></li>
-                        <button><a href="/"></a>CONTACT</button>
+                        <button>CONTACT</button>
                     </ul>
                 </nav>
             </div>
