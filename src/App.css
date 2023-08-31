@@ -189,6 +189,7 @@ header {
     color: hsl(212, 27%, 19%);
     font-weight: 900;
     font-size: 2rem;
+    font-weight: 900;
 }
 
 .transform p,
@@ -453,7 +454,7 @@ footer .social-icons {
 
     .transform,
     .stand-out {
-        padding: 0 3em;
+        padding: 0 2em;
         align-items: start;
         text-align: left;
     }
@@ -525,6 +526,7 @@ footer .social-icons {
     .graphic-design-text,
     .photography-text {
         width: 80%;
+        line-height: 1.1em;
     }
 
     header {
@@ -536,7 +538,8 @@ footer .social-icons {
 
     .transform,
     .stand-out {
-        padding: 0 4.5em;
+        padding-left: 8em;
+        padding-right: 0;
     }
 
     .transform,
@@ -546,7 +549,13 @@ footer .social-icons {
 
     .transform h2,
     .stand-out h2 {
-        width: 78%;
+        width: 66%;
+        margin-bottom: 0.35em;
+    }
+
+    .transform p,
+    .stand-out p {
+        width: 85%;
     }
 }
 
