@@ -55,7 +55,7 @@ export default function Header() {
                 ref={headerTextRef}
                 className="header-text moveUpDown">
                 <h1>WE ARE CREATIVES</h1>
-                <img src="./images/icon-arrow-down.svg" alt="" />
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
             </div>
         </header >
 

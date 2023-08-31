@@ -1,7 +1,7 @@
 /*GENERAL STYLES*/
-/* :root {
+:root {
     min-height: 100vh;
-} */
+}
 
 .App {
     font-size: 18px;
@@ -14,7 +14,7 @@ h2 {
 /*TYPOGRAPHY*/
 
 p {
-    line-height: 1.65em;
+    line-height: 1.8em;
 }
 
 p,
@@ -139,7 +139,8 @@ header {
 .header-text h1 {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.15em;
-    font-size: 2.7rem;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 
@@ -164,18 +165,9 @@ header {
 .gallery img:hover {
     cursor: pointer;
     transform: scaleY(1.1);
-    /* border: 3px solid red; */
     transition: all 1s
 }
 
-.img-transform-container:hover {
-    border: 5px solid hsl(7, 99%, 70%);
-}
-
-.img-stand-out-container:hover {
-    border: 5px solid hsl(51, 100%, 49%);
-
-}
 
 .transform h2,
 .stand-out h2 {
@@ -187,7 +179,6 @@ header {
 .transform p,
 .stand-out p {
     color: hsl(232, 10%, 55%);
-    line-height: 1.5em;
     margin-bottom: 2em;
 }
 
@@ -198,6 +189,7 @@ hr {
     border-radius: 10px;
     width: 140px;
 }
+
 
 .transform hr {
     border-color: hsla(51, 100%, 49%, 0.3);
@@ -361,7 +353,7 @@ footer .social-icons {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 830px) {
 
     .desktop-image {
         display: block;
@@ -419,24 +411,39 @@ footer .social-icons {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
     }
+
+
 
     .transform,
     .stand-out {
-        padding: 0 2em
+        padding: 0 3em;
+        align-items: start;
+        text-align: left;
     }
 
     .graphic-design {
+        display: flex;
+        justify-content: center;
         background-image: url("../public/images/desktop/image-graphic-design.jpg");
     }
 
 
     .photography {
+        display: flex;
+        justify-content: center;
         background-image: url("../public/images/desktop/image-photography.jpg");
+    }
+
+    .graphic-design-text,
+    .photography-text {
+        width: 55%;
     }
 
     .client-testimonials {
         grid-column: span 2;
+        padding: 5em 2em;
     }
 
     footer {
@@ -471,14 +478,41 @@ footer .social-icons {
 }
 
 
-@media screen and (min-width: 478px) and (max-width:768px) {
+@media screen and (min-width: 478px) and (max-width:830px) {
 
     .graphic-design,
     .photography {
-        height: 800px;
+        display: flex;
+        justify-content: center;
+        height: 850px;
+    }
+
+    .graphic-design-text,
+    .photography-text {
+        width: 80%;
     }
 
     header {
         height: 700px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+
+    .transform,
+    .stand-out {
+        padding: 0 4.5em;
+    }
+
+    .transform,
+    .stand-out {
+        width: 75%;
+    }
+
+    .transform h2,
+    .stand-out h2 {
+        width: 78%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:900px) {}

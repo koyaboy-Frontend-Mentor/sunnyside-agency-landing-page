@@ -18,8 +18,11 @@ export default function Main() {
                         compelling visuals that do most of the marketing for you.
                     </p>
 
-                    <a href="/" className="learn-more">LEARN MORE</a>
-                    <hr />
+                    <div>
+                        <a href="/" className="learn-more">LEARN MORE</a>
+                        <hr />
+                    </div>
+
                 </div>
             </div>
 
@@ -36,8 +39,11 @@ export default function Main() {
                     videographers, and copywriters,we'll
                     build and extend your brand in digital places.
                 </p>
-                <a href="/" className="learn-more">LEARN MORE</a>
-                <hr />
+                <div>
+                    <a href="/" className="learn-more">LEARN MORE</a>
+                    <hr />
+                </div>
+
             </div>
 
             <div className="graphic-design">
