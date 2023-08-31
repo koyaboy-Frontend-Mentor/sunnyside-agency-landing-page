@@ -161,6 +161,7 @@ header {
 
 /*MAIN*/
 
+
 .img-transform-container img,
 .img-stand-out-container img {
     width: 100%;
@@ -446,8 +447,7 @@ footer .social-icons {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto;
-        height: 100vh;
+        grid-template-rows: auto;
     }
 
 
